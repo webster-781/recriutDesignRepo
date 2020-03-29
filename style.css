@@ -1,0 +1,25 @@
+.svg-container {
+    position: fixed;
+    width: 100%;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes grow{
+    0%{
+        opacity: 0.0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+.navigate{
+    animation-name:grow;
+}
