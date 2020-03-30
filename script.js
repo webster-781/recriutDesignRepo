@@ -8,56 +8,56 @@ document.addEventListener('DOMContentLoaded',()=>{
     svg.attr("preserveAspectRatio", "xMinYMin meet")
        .attr("viewBox", `0 0 ${x} ${y}`)
        .classed("svg-content", true);
-       
+    rad = y/10;
        
        const ulc = svg.append('circle')
                       .attr('cx', x/2)
                       .attr('cy', y/2)
-                      .attr('r',y/5)
+                      .attr('r', rad)
                       .style('fill','yellow');
     
        ulc.transition()
           .delay(time)
           .duration(dur)
-          .attr('cx',0)
-          .attr('cy',0);
+          .attr('cx',rad)
+          .attr('cy',rad);
           time +=dur;
 
        const urc = svg.append('circle')
                       .attr('cx', x/2)
                       .attr('cy', y/2)
-                      .attr('r',y/5)
+                      .attr('r', rad)
                       .style('fill','red');
        urc.transition()
           .delay(time)
           .duration(dur)
-          .attr('cx',x)
-          .attr('cy',0);
+          .attr('cx',x-rad)
+          .attr('cy',rad);
           time +=dur;
 
         const drc = svg.append('circle')
                        .attr('cx', x/2)
                        .attr('cy', y/2)
-                       .attr('r',y/5)
+                       .attr('r', rad)
                        .style('fill','blue');
         drc.transition()
            .delay(time)
            .duration(dur)
-           .attr('cx',x)
-           .attr('cy',y);
+           .attr('cx',x-rad)
+           .attr('cy',y-rad);
         time +=dur;
             
             
        const dlc = svg.append('circle')
                    .attr('cx', x/2)
                    .attr('cy', y/2)
-                   .attr('r',y/5)
+                   .attr('r', rad)
                    .style('fill','green') ;
         dlc.transition()
            .duration(dur)
            .delay(time)
-           .attr('cx',0)
-           .attr('cy',y);
+           .attr('cx',rad)
+           .attr('cy',y-rad);
        time +=dur;
 
 
@@ -105,12 +105,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         window.location = `${name}.html`;
     }
 
-    setTimeout(function(){window.location = "home.html";},5000);
+    setTimeout(function(){load_page("home");},5000);
     console.log(time);
-
-    iter = ["yellow","red","blue","green"];
-    lefts = [0,x,x,0]
-    tops = [0,0,y,y]
-    i = 0;
-
     });
