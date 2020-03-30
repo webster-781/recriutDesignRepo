@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     /* Initial Animation*/
     x = screen.availWidth*(1);
     y = screen.availHeight*(0.9);
-     dur = 500;
-     time = 0;
+    dur = 500;
+    time = 0;
     const svg = d3.select("#svg");    
     svg.attr("preserveAspectRatio", "xMinYMin meet")
        .attr("viewBox", `0 0 ${x} ${y}`)
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',()=>{
           .delay(time)
           .duration(dur)
           .attr('cx',0)
-          .attr('cy',0)
+          .attr('cy',0);
           time +=dur;
 
        const urc = svg.append('circle')
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded',()=>{
           .delay(time)
           .duration(dur)
           .attr('cx',x)
-          .attr('cy',0)
+          .attr('cy',0);
           time +=dur;
 
         const drc = svg.append('circle')
@@ -100,15 +100,17 @@ document.addEventListener('DOMContentLoaded',()=>{
              .duration(10)                       //image transition back out
         i = i+1; 
     }
-    /*INITIAL ANIMATION ENDS*/
 
-    document.querySelectorAll(".navigate").forEach(function(item){
-        item.style.opacity = 0;
+    function load_page(name){
+        window.location = `${name}.html`;
+    }
+
+    setTimeout(function(){window.location = "home.html";},5000);
+    console.log(time);
+
+    iter = ["yellow","red","blue","green"];
+    lefts = [0,x,x,0]
+    tops = [0,0,y,y]
+    i = 0;
+
     });
-    document.querySelectorAll(".navigate").forEach(function(item){
-        item.style.animationName = "grow";
-        item.style.animationDelay = time;
-        item.style.animationDuration = 50;
-    });
-    time = time+ 100;
-})
