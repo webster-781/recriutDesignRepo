@@ -26,6 +26,7 @@ body{
 }
 
 #bigdiv{
+    opacity: 0;
     animation-name: grow;
     animation-delay: 1s;
     animation-duration: 1s;
@@ -130,3 +131,24 @@ body{
     animation-fill-mode: forwards;
     animation-play-state: paused;
 } 
+
+.thumbnail{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.thumbnail img{
+    width:60%;
+    height:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thumbnail h2{
+    float: right;
+}
+
+.social-link{
+    width:5%;
+    height:5;
+}

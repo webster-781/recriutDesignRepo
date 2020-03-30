@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     y = screen.availHeight*(0.72);
     rad = screen.availHeight*(0.09);
     colors = ["yellow","red","blue","green"];
-    lefts = [0,x,x,0]
-    tops = [0,0,y,y]
+    lefts = [0,x,x,0];
+    tops = [0,0,y,y];
     i = 0;
     function load_page(name){
         window.location = `${name}.html`;
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         div.setAttribute('style',`margin-right:auto; margin-left:5*rad; width: 100%;`)
     });
     const weare = document.querySelector("#weare");
-    weare.setAttribute('style',`font-size:${rad}px`)
+    weare.setAttribute('style',`font-size:${rad}px`);
     $('.slider').bbslider({
         auto:  true,
         timer: 5000,

@@ -27,4 +27,16 @@ document.addEventListener("DOMContentLoaded",()=>{
      bigdiv.setAttribute(`style`,`opacity :0;margin-right: ${(2.1)*rad}px; margin-left:${(2.1)*rad}px;`)
      const logo = document.querySelector("#logo");
      logo.setAttribute('style',`margin-left: auto; margin-right: auto;`);
+    
+     document.querySelectorAll(".slide").forEach(div =>{
+        console.log(div.alt);
+        div.setAttribute('style',`margin-right:auto; margin-left:5*rad; width: 100%;`)
+    });
+    const weare = document.querySelector("#weare");
+    weare.setAttribute('style',`font-size:${rad}px`);
+     $('.slider').bbslider({
+        auto:  true,
+        timer: 5000,
+        loop:  true
+    });
 });
