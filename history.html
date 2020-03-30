@@ -8,10 +8,20 @@
     <link rel="icon" href="http://s3.amazonaws.com/assets.piedpiper.pro/app/uploads/2018/03/pp_favicon_72.ico.png" sizes="32x32">
     <link rel = "stylesheet" href ="style.css">
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script id="post" type="text/x-handlebars-template">
+        <!-- <div class="post-class">
+            <h1 class="post-title">{{title}}</h1>
+            <h2 class="post-author">{{author}}</h2>
+            <img class ="post-image" src="{{source}}" style ="width:80%; height:80%; margin-left: auto; margin-right: auto;"/>
+            <article><p>{{content}}</p></article>
+            <button class="hide btn btn-danger">Hide</button>
+        </div> -->
+    </script>
     <!--BOOTSTRAP ENDS-->
     <body>
         <div preserveAspectRatio="xMidYMid meet" class = "bigdiv">
@@ -22,4 +32,13 @@
             <button type = "button" class = "navigate btn-circle btn-xl" id="history">HISTORY</button>
             <button type = "button" class = "navigate btn-circle btn-xl" id="features">FEATURES</button>
         </div>
+        <div class="container" style ="background-color: white;" id="bigdiv">
+        <div id="posts" style ="width:80%; height:80%; margin-left: auto; margin-right: auto;">
+            <!-- <h1>A Piper’s Last Song</h1>
+            <h2>By Jared Dunn</h2>
+            <img src="http://s3.amazonaws.com/assets.piedpiper.pro/app/uploads/2019/12/sv-607-Jared-1920.jpg" style ="width:80%; height:80%; margin-left: auto; margin-right: auto;" />
+            <article><p>Dear readers, a COO never hopes to write a goodbye like this. I always thought Pied Piper would outlive me by centuries, lasting at least until Richard’s great-great granddaughter steps down as CEO when she, like King Edward VIII, finds true love. I have given over three dozen eulogies in my life and this one is the hardest yet. Watching our great company close its doors feels like how it must have felt to witness the papyrus scrolls in the Library of Alexandria slowly curl up among the flames. Richard’s vision was well on its way to changing the future of technology, but now all we have are charred remains and sweet memories.I want to take a moment to address those who are sharpening their pitchforks and pulling out their joke books to try to kick Richard while he’s down. I’ve read what some of you jerks have said on the internet and you ought to wash your mouths out with lighter fluid. It’s been the greatest gift of my life to watch Richard grow from a boy into a man, and a noble one at that. Richard was our Churchill, our Charlemagne, our Odysseus, and he tied himself to the mast as we all went mad with the Sirens’ songs echoing around us.I wonder if Richard remembers the night I knew our friendship would be eternal – it was truly one of the best nights of my life. Richard needed a place to stay, and he graciously offered to stay at my condo. I gave him my room, and then in the middle of the night, he kicked his sock foot out from under the covers. Luckily, I had I tiptoed into the room to refill the humidifier with the Brita, and I spotted his cold, lost little foot, and I tucked it back in. Because that’s all I could ever do– support our noble leader in the simplest, smallest way possible, knowing in my heart that it was making a difference. Now I must support him from afar as our company beaches itself on the shores of history.I wish the Academy would get back to me about screening the Pied Piper In Memoriam slideshow I’ve made for this year’s awards show. All I want is a little closure in a public forum – surely they understand that. I’ll miss walking in the doors at Pied Piper every morning, turning on the lights, giving the bullpen a quick Swiffer, and emptying all the recycle bins so the custodial staff wouldn’t strain their backs. I’ll miss turning on my laptop and checking my emails, and adding the party parrot reaction to all the previous night’s Slack messages, and writing this blog for you, dear readers. But most of all, I’ll miss working every day with the best and smartest people in the world. Pied Piper Forever.Love,Jared.",</p></article> -->
+            </div>
+        </div>
     </body>
+</html>

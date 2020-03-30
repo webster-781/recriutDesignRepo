@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     for (text in texts){ 
         console.log(i);
         if(i==3 || i==11 || i==13)
-            imgx += imgw
-        imgx +=imgw
-        time += img_dur
+            imgx += imgw;
+        imgx +=imgw;
+        time += img_dur;
          image = svg.append('image')
                     .attr('xlink:href', `file://${dir}/images/alpha/alpha-${texts[i]}.jpg`)
                     .attr("x", `${imgx}`)
