@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     document.querySelectorAll(".navigate").forEach(button =>
         {
-            button.setAttribute('style',`font-size: ${rad/4}px; font-family: "Times New Roman", Times, serif;position: fixed; top:${tops[i]}px; left: ${lefts[i]}px;width :${2*rad}px; height: ${2*rad}px; background: ${colors[i]}; border-radius :${rad}px`)
+            button.setAttribute('style',`opacity :0.4; font-size: ${rad/3}px; font-family: "Times New Roman", Times, serif;position: fixed; top:${tops[i]}px; left: ${lefts[i]}px;width :${2*rad}px; height: ${2*rad}px; background: ${colors[i]}; border-radius :${rad}px`)
             i++;
             const name = button.id;
             button.onclick = () =>
